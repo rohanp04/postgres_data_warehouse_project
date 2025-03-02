@@ -48,7 +48,7 @@ BEGIN
     BEGIN
         -- Load crm_cust_info
         start_time := clock_timestamp();
-        COPY bronze.crm_cust_info FROM 'E:\SQLscripts\DataWarehouse\datasets\source_crm\cust_info.csv' 
+        COPY bronze.crm_cust_info FROM 'path' 
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));  -- Convert interval to seconds
@@ -57,7 +57,7 @@ BEGIN
 
         -- Load crm_prd_info
         start_time := clock_timestamp();
-        COPY bronze.crm_prd_info FROM 'E:\SQLscripts\DataWarehouse\datasets\source_crm\prd_info.csv' 
+        COPY bronze.crm_prd_info FROM 'path'
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));
@@ -66,7 +66,7 @@ BEGIN
 
         -- Load crm_sales_details
         start_time := clock_timestamp();
-        COPY bronze.crm_sales_details FROM 'E:\SQLscripts\DataWarehouse\datasets\source_crm\sales_details.csv' 
+        COPY bronze.crm_sales_details FROM 'path'
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));
@@ -75,7 +75,7 @@ BEGIN
 
         -- Load erp_loc_a101
         start_time := clock_timestamp();
-        COPY bronze.erp_loc_a101 FROM 'E:\SQLscripts\DataWarehouse\datasets\source_erp\LOC_A101.csv' 
+        COPY bronze.erp_loc_a101 FROM 'path'
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));
@@ -84,7 +84,7 @@ BEGIN
 
         -- Load erp_cust_az12
         start_time := clock_timestamp();
-        COPY bronze.erp_cust_az12 FROM 'E:\SQLscripts\DataWarehouse\datasets\source_erp\CUST_AZ12.csv' 
+        COPY bronze.erp_cust_az12 FROM 'path' 
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));
@@ -93,7 +93,7 @@ BEGIN
 
         -- Load erp_px_cat_g1v2
         start_time := clock_timestamp();
-        COPY bronze.erp_px_cat_g1v2 FROM 'E:\SQLscripts\DataWarehouse\datasets\source_erp\PX_CAT_G1V2.csv' 
+        COPY bronze.erp_px_cat_g1v2 FROM 'path'
         DELIMITER ',' CSV HEADER;
         end_time := clock_timestamp();
         time_taken := EXTRACT(EPOCH FROM (end_time - start_time));
