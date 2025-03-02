@@ -1,4 +1,4 @@
-# PostgreSQL Data Warehouse 
+# PostgreSQL Data Warehouse 🚀
 
 Welcome to the PostgreSQL Data Warehouse and Analytics Project! 🚀  
 This project showcases a complete data warehousing and analytics solution, built using **PostgreSQL**. It demonstrates the end-to-end process of data ingestion, transformation, and analysis, following industry best practices in **data engineering** and **analytics**.  
